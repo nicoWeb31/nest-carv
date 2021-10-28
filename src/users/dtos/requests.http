@@ -5,8 +5,23 @@ Content-Type: application/json
 
 {
     "email" : "test@tewsst.fr",
-    "password" : "test1w2s34"
+    "password" : "tessdt1sw2s34"
 }
 
 ### Get a new user ###
-GET http://localhost:3000/auth/signup
+GET http://localhost:3000/auth/1
+
+### Get a new user ###
+GET http://localhost:3000/auth?email=test@tewsst.fr
+
+### delete a new user ###
+DELETE  http://localhost:3000/auth/6
+
+### update a new user ###
+PATCH   http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email" : "toto@tewsdfst.fr",
+    "password" : "tessdt1sw2s34"
+}
